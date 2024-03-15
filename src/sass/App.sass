@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-style: normal
+    font-family: "Caudex", serif
+    
+body
+    background-color: black
+    background-image: url(../assets/bg.png)
+    background-size: 90%
+    background-repeat: no-repeat
+    &::before
+        position: fixed
+        content: ""
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background-image: url(../assets/sparkles.gif)
+        opacity: .1
+        background-size: cover
+        background-repeat: no-repeat
+        pointer-events: none
+
+#root 
+    position: relative
+    left: -25%
+    height: 100vh
+    div 
+        height: 90%
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        gap: 1rem
+        h2
+            display: flex
+            color: #fef3c7
+            font-weight: 700
+            font-size: 3rem
+            text-shadow: 1px 1px 15px black
+        .totalDeaths
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 5px
+            color: #fffffb
+            font-size: 1.5rem
+            text-shadow: 4px 4px 18px rgba(0, 0, 0, 1), 4px 4px 18px rgba(0, 0, 0, 1), 4px 4px 18px rgba(0, 0, 0, 1)
+            .count
+                font-size: 2rem
+                text-shadow: 4px 4px 18px rgba(0, 0, 0, 1), 4px 4px 18px rgba(0, 0, 0, 1), 4px 4px 18px rgba(0, 0, 0, 1)
+        form
+            input, button
+                font-family: "Roboto", sans-serif
+                padding: 10px
+                border: none
+                border: 1px solid transparent
+            input
+                border-radius: 10px 0 0 10px
+                font-weight: 700
+                &:focus
+                    outline: none
+            button
+                border-radius: 0 10px 10px 0
+                cursor: pointer
+                background-color: #fef3c7
+                transition: all 0.1s ease-in-out
+                &:hover
+                    border: 1px solid  #fef3c7
+                    background-color: transparentize(#fef3c7, 0.9)
+                    color: #fef3c7
+        .addSection
+            height: auto
+            margin-bottom: 150px
+            p
+                color: #fffffb
+                text-shadow: 4px 4px 18px rgba(0, 0, 0, 1), 4px 4px 18px rgba(0, 0, 0, 1), 4px 4px 18px rgba(0, 0, 0, 1)
+            div
+                height: auto
+                display: flex
+                flex-direction: row
+                button
+                    border: 1px solid transparent
+                    padding: 5px
+                    cursor: pointer
+                    background-color: #bbf7d0
+                    border-radius: 5px
+                    font-weight: 700
+                    transition: all 0.1s ease-in-out
+                .addDeath
+                    &:hover
+                        background-color: transparentize(#bbf7d0, 0.9)
+                        border: 1px solid #bbf7d0
+                        color: #bbf7d0
+                .subtractDeath
+                    background-color: #fecaca
+                    &:hover
+                        background-color: transparentize(#fecaca, 0.9)
+                        border: 1px solid #fecaca
+                        color: #fecaca
+        .enemyLog
+            height: auto
+            h3
+                color: #fef3c7
+                font-weight: 700
+                font-size: 2rem
+                text-shadow: 1px 1px 15px black
+            ul
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                width: 300px
+                list-style: none
+                gap: 5px
+                li
+                    background-color: #fffbeb
+                    padding: 5px
+                    border-radius: 5px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    gap: 5px
+                    flex-direction: column
+                    width: 100%
