@@ -7,10 +7,21 @@
     box-sizing: border-box
     font-style: normal
     font-family: "Caudex", serif
+
+*::-webkit-scrollbar 
+    width: 5px
+
+*::-webkit-scrollbar-track 
+    background: #000000
+
+
+*::-webkit-scrollbar-thumb
+    background-color: #fff4db
+
     
 body
     background-color: black
-    background-image: url(../assets/bg.png)
+    background-image: url(../assets/eldenring.png)
     background-size: 90%
     background-repeat: no-repeat
     &::before
@@ -29,7 +40,8 @@ body
 #root 
     position: relative
     left: -25%
-    height: 100vh
+    height: fit-content
+    margin-bottom: 1rem
     div 
         height: 90%
         display: flex
@@ -111,6 +123,7 @@ body
                 font-size: 2rem
                 text-shadow: 1px 1px 15px black
             ul
+                height: fit-content
                 display: flex
                 align-items: center
                 justify-content: center
@@ -119,8 +132,8 @@ body
                 list-style: none
                 gap: 5px
                 li
-                    background-color: #fffbeb
-                    padding: 5px
+                    background-color: #fffffb
+                    padding: 10px
                     border-radius: 5px
                     display: flex
                     align-items: center
@@ -128,3 +141,25 @@ body
                     gap: 5px
                     flex-direction: column
                     width: 100%
+                    p
+                        text-align: center
+                    span
+                        display: flex
+                        gap: 5px
+                        button
+                            padding: 5px
+                            border: 1px solid transparent
+                            font-weight: 700
+                            border-radius: 5px
+                            cursor: pointer
+                            transition: all 0.1s ease-in-out
+                        .deleteEnemy
+                            background-color: #e7e5e4
+                            &:hover
+                                background-color: transparentize(#e7e5e4, 0.5)
+                                border: 1px solid #e7e5e4
+                        .selectEnemy
+                            background-color: #fffbeb
+                            border: 1px solid #fde68a
+                            &:hover
+                                background-color: transparentize(#fffbeb, 0.5)

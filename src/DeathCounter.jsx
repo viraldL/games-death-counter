@@ -102,8 +102,8 @@ const DeathCounter = () => {
           <li key={enemy}>
             <p>Deaths by {enemy}: {deathCount}</p>
             <span>
-                <button onClick={() => setCurrentEnemy(enemy)}>Select Enemy</button>
-                <button onClick={() => handleDeleteEnemy(enemy)}>Delete</button>
+                <button className='selectEnemy' onClick={() => setCurrentEnemy(enemy)}>Select Enemy</button>
+                <button className='deleteEnemy' onClick={() => handleDeleteEnemy(enemy)}>Delete</button>
             </span>
           </li>
         ))}
