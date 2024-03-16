@@ -3,6 +3,7 @@ import EldenRing from './assets/eldenring.png';
 import DarkSouls from './assets/darksouls.png';
 import Sekiro from './assets/sekiro.png';
 import HollowKnight from './assets/hollowknight.png';
+import './sass/BackgroundChanger.sass'
 
 export default function BackgroundChanger() {
     const [bg, changeBG] = useState(() => localStorage.getItem('background') || EldenRing);
@@ -29,7 +30,8 @@ export default function BackgroundChanger() {
     }
 
     return (
-        <div>
+        <div className='bgChanger'>
+            <h4>Select background:</h4>
             <button onClick={changeToElden}>Elden Ring</button>
             <button onClick={changeToSouls}>Dark Souls</button>
             <button onClick={changeToSekiro}>Sekiro</button>

@@ -3,11 +3,13 @@ import BackgroundChanger from './BackgroundChager';
 import './sass/App.sass'
 
 function App() {
-  return (
+  return (<>
+    <BackgroundChanger/>
     <div>
       <BackgroundChanger/>
       <DeathCounter />
     </div>
+    </>
   );
 }
 

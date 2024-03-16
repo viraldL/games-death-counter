@@ -41,13 +41,14 @@ body
     left: -25%
     height: fit-content
     margin-bottom: 1rem
-    div 
-        height: 90%
-        display: flex
-        align-items: center
-        justify-content: center
-        flex-direction: column
-        gap: 1rem
+    div
+        &:not(.bgChanger)
+            height: 90%
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            gap: 1rem
         h2
             display: flex
             color: #fef3c7
