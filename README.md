@@ -1,8 +1,13 @@
-# React + Vite
+# 🎇 Death Counter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Death counter made specially for souls games, but you can use it as you want :)
 
-Currently, two official plugins are available:
+- Saves deaths for every enemy
+- History log with all enemies
+- You can change game background (now only for selected games)
+- You can edit/delete enemies and deaths in case you made a mistake
+- Works on phone
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[🚀 Try it here!](https://games-death-counter.vercel.app/)
+
+![Preview](preview.png)
